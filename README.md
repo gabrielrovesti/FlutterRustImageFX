@@ -2,10 +2,6 @@
 
 App mobile cross-platform per l'applicazione di filtri ed effetti alle immagini, realizzata con Flutter per l'interfaccia utente e Rust/WebAssembly per l'elaborazione ad alte prestazioni.
 
-<p align="center">
-  <img src="screenshots/app_preview.png" alt="App Preview" width="300">
-</p>
-
 ## 🚀 Caratteristiche
 
 - **Elaborazione immagini ad alte prestazioni** - Filtri implementati in Rust e compilati in WebAssembly
@@ -58,14 +54,6 @@ flutter pub get
 ```bash
 flutter run
 ```
-
-## 📸 Screenshot
-
-<p align="center">
-  <img src="screenshots/home_screen.png" alt="Home Screen" width="250">
-  <img src="screenshots/filter_applied.png" alt="Filter Applied" width="250">
-  <img src="screenshots/gallery_view.png" alt="Gallery View" width="250">
-</p>
 
 ## 🏗️ Architettura
 
