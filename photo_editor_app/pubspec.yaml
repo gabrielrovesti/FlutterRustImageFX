@@ -1,0 +1,42 @@
+name: photo_editor_app
+description: App per editing foto con Rust WASM e GraphQL
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.5
+  image_picker: ^1.0.4
+  flutter_rust_bridge: ^1.75.0
+  graphql_flutter: ^5.1.2
+  flutter_hooks: ^0.18.6
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  http: ^1.1.0
+  flutter_dotenv: ^5.1.0
+  provider: ^6.0.5
+  google_fonts: ^5.1.0
+  wasm_interop: 2.0.1
+  js: ^0.6.7
+  flutter_svg: ^2.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.3
+  build_runner: ^2.4.6
+  freezed: ^2.4.1
+  json_serializable: ^6.7.1
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/wasm/
+    - assets/images/
+    - .env
