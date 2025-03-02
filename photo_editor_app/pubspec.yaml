@@ -20,8 +20,12 @@ dependencies:
   flutter_dotenv: ^5.1.0
   provider: ^6.0.5
   google_fonts: ^5.1.0
-  wasm_interop: 2.0.1
-  js: ^0.6.7
+  # Rimossi pacchetti problematici
+  # wasm_interop: ^2.0.1
+  # js: ^0.6.7
+  ffi: ^2.1.0
+  path: ^1.8.3
+  image: ^4.0.17
   flutter_svg: ^2.0.7
 
 dev_dependencies:

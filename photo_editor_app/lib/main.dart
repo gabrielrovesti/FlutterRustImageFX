@@ -7,7 +7,7 @@ import 'package:image_picker/image_picker.dart';
 import 'package:photo_editor_app/config/graphql_config.dart';
 import 'package:photo_editor_app/screens/gallery_screen.dart';
 import 'package:photo_editor_app/services/graphql_api.dart';
-import 'package:photo_editor_app/services/wasm_bridge.dart';
+import 'package:photo_editor_app/services/rust_bridge.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
     return GraphQLProvider(
       client: GraphQLConfig.initializeClient(),
       child: MaterialApp(
-        title: 'Filtri foto con Rust WASM',
+        title: 'Filtri foto con Rust',
         theme: ThemeData(
           primarySwatch: Colors.deepPurple,
           colorScheme: ColorScheme.fromSeed(
@@ -135,7 +135,7 @@ class _EditorPageState extends State<EditorPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Rust WASM Photo Editor'),
+        title: Text('Rust Photo Editor'),
         elevation: 0,
         actions: [
           IconButton(
